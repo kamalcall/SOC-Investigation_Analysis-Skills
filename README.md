@@ -1,4 +1,4 @@
-Tâches automatisables identifiées à partir du document 'SOC Investigation & Analysis Skills':
+Tâches automatisables de 'SOC Investigation & Analysis Skills':
 
 **Niveau Basique:**
 
