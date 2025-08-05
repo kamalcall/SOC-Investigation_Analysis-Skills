@@ -16,7 +16,7 @@ powershell
 
 
 *********************************************************************************************************************
-- Exemple de dis-activation et suppression de l'application au démarrage :
+- Exemple de désactivation et suppression d'une application au démarrage:
 
 Microsoft.Lists
 Location: HKCU:\... (Ne nécessite pas nécessairement des privilèges d'administrateur, mais c'est une bonne pratique de les avoir)
@@ -24,3 +24,4 @@ Name: Microsoft.Lists
 
 powershell
 Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "Microsoft.Lists" -Force
+
