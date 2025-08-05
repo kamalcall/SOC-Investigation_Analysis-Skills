@@ -1,0 +1,26 @@
+Cette commande devrait s'exécuter sans demander de confirmation et sans message d'erreur si vous êtes bien administrateur: 
+
+- Exécutez la commande pour définir la politique d'exécution pour la session actuelle :
+
+powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+
+- Essayez d'exécuter l'un des scripts, en utilisant le préfixe ./ :
+
+powershell
+.\Run-MAIN_MENU.ps1
+
+
+
+
+
+
+*********************************************************************************************************************
+- Exemple de dis-activation et suppression de l'application au démarrage :
+
+Microsoft.Lists
+Location: HKCU:\... (Ne nécessite pas nécessairement des privilèges d'administrateur, mais c'est une bonne pratique de les avoir)
+Name: Microsoft.Lists
+
+powershell
+Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "Microsoft.Lists" -Force
